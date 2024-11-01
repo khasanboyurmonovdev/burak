@@ -3,6 +3,7 @@ import path from "path";
 import router from "./router";
 import routerAdmin from "./router-admin";
 import morgan from "morgan";
+import cookieParser from "cookie-parser";
 import { MORGAN_FORMAT } from "./libs/config";
 import session from "express-session";
 import ConnectMongoDB from "connect-mongodb-session";
@@ -18,6 +19,7 @@ const app = express(); // bu yerda expressni chaqirib olyapmiz
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json()); // bu kod orqali rest API sifatida request bo'lyapkan data larni body sida kelyapkan  json data otkazishga ruxsat beryapmiz
+app.use(cookieParser());
 app.use(morgan(MORGAN_FORMAT));
 
 /**2- SESSIONS */
