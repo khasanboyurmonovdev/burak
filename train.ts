@@ -5,6 +5,7 @@ Shunday function yozing, u string qabul qilsin va string ichidagi unli harflar s
 MASALAN: countVowels("string") return 1;
 
 */
+/*
 function countVowels(input: string): number {
   const vowels = "aeiouAEIOU";
   let count = 0;
@@ -21,7 +22,7 @@ function countVowels(input: string): number {
 // Misol uchun
 console.log(countVowels("development"));
 console.log(countVowels("administration"));
-
+*/
 /*J-TASK: 
 
 Shunday function yozing, u string qabul qilsin va string ichidagi eng uzun sozni qaytarsin.
