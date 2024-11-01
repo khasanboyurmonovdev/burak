@@ -144,6 +144,7 @@ memberController.retrieveAuth = async (
   try {
     const token = req.cookies["accessToken"];
     if (token) req.member = await authService.checkAuth(token);
+    next();
   } catch (err) {
     console.log("Error, retrieveAuth:", err);
     next();
