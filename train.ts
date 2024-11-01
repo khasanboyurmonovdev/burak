@@ -1,4 +1,22 @@
 /*
+Z-TASK:
+
+Shunday function yozing, u sonlardan tashkil topgan array qabul qilsin. Function arraydagi juft sonlarni yigindisini qaytarsin
+MASALAN: sumEvens([1,2,3]) return 2
+
+@MITASK
+*/
+function sumEvens(numbers: number[]): number {
+  return numbers
+    .filter((num) => num % 2 === 0) // Juft sonlarni filtrlash
+    .reduce((acc, num) => acc + num, 0); // Yig'indini hisoblash
+}
+
+// Misol uchun chaqirish
+const result = sumEvens([1, 2, 3, 4, 5, 6, 7, 7]);
+console.log(result);
+
+/*
 Y-TASK:
 
 Shunday function yozing, uni 2 ta array parapetri bolsin. Function ikkala arrayda ham ishtirok etgan qiymatlarni bir arrayda qaytarsin
@@ -7,6 +25,7 @@ MASALAN: findIntersection([1,2,3], [3,2,0]) return [2,3]
 @MITASK
 
 */
+/*
 function findIntersection(arr1: number[], arr2: number[]): number[] {
   const set1 = new Set(arr1); // Birinchi arrayni Set ga aylantiramiz
   const intersection = arr2.filter((item) => set1.has(item)); // Ikkita arraydan umumiy elementlarni filtrlaymiz
@@ -16,7 +35,7 @@ function findIntersection(arr1: number[], arr2: number[]): number[] {
 // Misol
 const result = findIntersection([1, 2, 3], [3, 2, 0]);
 console.log(result); // [2, 3]
-
+*/
 /*
 TASK X
 
