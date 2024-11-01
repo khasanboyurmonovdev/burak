@@ -1,3 +1,28 @@
+/*
+V-TASK:
+
+Shunday function yozing, uni string parametri bolsin va stringdagi harf va u harf necha marta takrorlangani sonidan tashkil topgan object qaytarsin.
+MASALAN: countChars("hello") return {h: 1, e: 1, l: 2, o: 1}
+
+@MITASK
+*/
+function countChars(input: string): Record<string, number> {
+  const charCount: Record<string, number> = {};
+
+  for (const char of input) {
+    if (charCount[char]) {
+      charCount[char]++;
+    } else {
+      charCount[char] = 1;
+    }
+  }
+
+  return charCount;
+}
+
+// Misol
+console.log(countChars("hello"));
+
 /* 
 U-TASK:
 
@@ -7,6 +32,7 @@ MASALAN: sumOdds(9) return 4; sumOdds(11) return 5;
 @MITASK
 
 */
+/*
 function sumOdds(n: number): number {
   let count = 0;
 
@@ -22,7 +48,7 @@ function sumOdds(n: number): number {
 // Misollar
 console.log(sumOdds(13));
 console.log(sumOdds(15));
-
+*/
 /* 
 T-TASK:
 
