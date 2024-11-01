@@ -1,3 +1,24 @@
+/*
+R-TASK:
+
+Shunday function yozing, u string parametrga ega bolsin. String "1+2" holatda pass qilinganda string ichidagi sonlar yigindisini number holatda qaytarsin.
+MASALAN: calculate("1+3") return 4;
+
+@MITASK
+*/
+
+function calculate(expression: string): number {
+  // Stringni "+" bo'yicha bo'lib, har bir sonni olish
+  const numbers = expression.split("+").map(Number);
+  // Sonlarni yig'indisini hisoblash
+  const sum = numbers.reduce((acc, curr) => acc + curr, 0);
+  return sum;
+}
+
+// Misol
+console.log(calculate("5+8"));
+console.log(calculate("10+35+50+40+30"));
+
 /*Q-TASK:
 
 Shunday function yozing, u 2 ta parametrgga ega bolib birinchisi object, ikkinchisi string. Agar string parametr objectni propertysi bolsa true bolmasa false qaytarsin.
@@ -5,7 +26,7 @@ MASALAN: hasProperty({name: "BMW", model: "M3"}, "model") return true; hasProper
 
 @MITASK
 */
-
+/*
 function hasProperty(obj: object, prop: string): boolean {
   return prop in obj;
 }
@@ -19,7 +40,7 @@ console.log(hasProperty(car, "color"));
 console.log(hasProperty(car, "year"));
 console.log(hasProperty(car, "brand"));
 console.log(hasProperty(car, "make"));
-
+*/
 /*
 P-TASK:
 
