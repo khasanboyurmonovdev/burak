@@ -3,6 +3,7 @@
 Shunday function yozing, u string qabul qilsin va string ichidagi eng uzun sozni qaytarsin.
 MASALAN: findLongestWord("I come from Uzbekistan") return "Uzbekistan"
 */
+/*
 
 function findLongestWord(sentence: string): string {
   // Stringni bo'shliqqa qarab ajratamiz
@@ -23,7 +24,7 @@ function findLongestWord(sentence: string): string {
 }
 
 console.log(findLongestWord("I am frontend developer Henry in Korea"));
-
+*/
 /**
  * modern frontend development(SINGLE PAGE APPLICATION DEB HAM ATALADI) VA SPA DA frontendimiz json data qabul qiladi backend dan va browserda joyshlashb olgan single page applicationimiz owa json datadan html ni ozi xosil qiladi
  * modern frontend development( yani S.P.A.) REACT LIBRARY sidan foydalanadi. react library framework emas (User's application ini  REACT DA QLAMIZ)
@@ -78,8 +79,11 @@ css class=> Snake case
  * REST API
  * GraphQL API
  * ....
+ 
  */
-
+/**COOKIE LAR  HAR BIR REQUESTGA JOINT QILIB OLADI
+ * COOKIE OZINI OZI DESTROY QILA OLADI
+ */
 /*H2-TASK: 
 
 Shunday function tuzing, unga string argument pass bolsin. Function ushbu agrumentdagi digitlarni yangi stringda return qilsin
