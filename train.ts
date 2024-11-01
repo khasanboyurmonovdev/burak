@@ -1,4 +1,20 @@
 /*
+ZA-TASK:
+
+Shunday function yozing, u array ichidagi objectlarni “age” qiymati boyicha sortlab bersin. 
+MASALAN: sortByAge([{age:23}, {age:21}, {age:13}]) return [{age:13}, {age:21}, {age:23}]
+
+@MITASK
+*/
+function sortByAge(arr: { age: number }[]): { age: number }[] {
+  return arr.sort((a, b) => a.age - b.age);
+}
+
+// Misol
+const result = sortByAge([{ age: 23 }, { age: 21 }, { age: 13 }]);
+console.log(result); // [{age: 13}, {age: 21}, {age: 23}]
+
+/*
 Z-TASK:
 
 Shunday function yozing, u sonlardan tashkil topgan array qabul qilsin. Function arraydagi juft sonlarni yigindisini qaytarsin
