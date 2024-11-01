@@ -1,4 +1,46 @@
 /*
+TASK X
+
+Shunday function yozing, uni object va string parametrlari bo'lsin.
+Bu function, birinchi object parametri tarkibida, kalit sifatida ikkinchi string parametri
+necha marotaba takrorlanganlini sanab qaytarsin.
+
+Eslatma => Nested object'lar ham sanalsin
+
+MASALAN: countOccurrences({model: 'Bugatti', steer: {model: 'HANKOOK', size: 30}}, 'model') return 2
+
+Yuqoridagi misolda, birinchi argument object, ikkinchi argument 'model'.
+Funktsiya, shu ikkinchi argument 'model', birinchi argument object
+tarkibida kalit sifatida 2 marotaba takrorlanganligi uchun 2 soni return qilmoqda
+
+
+*/
+function countOccurrences(obj: Record<string, any>, key: string): number {
+  let count = 0;
+
+  function countKeys(o: Record<string, any>) {
+    for (const k in o) {
+      if (k === key) {
+        count++;
+      }
+      if (typeof o[k] === "object" && o[k] !== null) {
+        countKeys(o[k]);
+      }
+    }
+  }
+
+  countKeys(obj);
+  return count;
+}
+
+// Misol
+const result = countOccurrences(
+  { model: "Bugatti", steer: { model: "HANKOOK", size: 30 } },
+  "model"
+);
+console.log(result); // 2
+
+/*
 W-TASK:
 
 Shunday function yozing, uni array va number parametrlari bolsin. Function arrayni numberda berilgan uzunlikda kesib bolaklarga ajratilgan array holatida qaytarsin
@@ -7,6 +49,7 @@ MASALAN: chunkArray([1,2,3,4,5,6,7,8,9,10], 3) return [[1,2,3], [4,5,6], [7,8,9]
 @MITASK
 
 */
+/*
 function chunkArray<T>(array: T[], chunkSize: number): T[][] {
   const result: T[][] = [];
 
@@ -21,7 +64,7 @@ function chunkArray<T>(array: T[], chunkSize: number): T[][] {
 // Misol
 const result = chunkArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3);
 console.log(result); // [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10]]
-
+*/
 /*
 V-TASK:
 
