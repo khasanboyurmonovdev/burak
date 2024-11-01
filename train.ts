@@ -2,7 +2,7 @@
 -Login standards;
 -Naming standards: function, method , variable => CamelCase
 class=> Pascal
-folders=>Kebab case
+folders, file=>Kebab case
 css class=> Snake case
 - Error handling
 
