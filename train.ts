@@ -1,3 +1,25 @@
+/*Q-TASK:
+
+Shunday function yozing, u 2 ta parametrgga ega bolib birinchisi object, ikkinchisi string. Agar string parametr objectni propertysi bolsa true bolmasa false qaytarsin.
+MASALAN: hasProperty({name: "BMW", model: "M3"}, "model") return true; hasProperty({name: "BMW", model: "M3"}, "year") return false
+
+@MITASK
+*/
+
+function hasProperty(obj: object, prop: string): boolean {
+  return prop in obj;
+}
+
+// Misol uchun:
+
+const car = { brand: "Toyota", model: "Corolla", year: 2020 };
+
+console.log(hasProperty(car, "model"));
+console.log(hasProperty(car, "color"));
+console.log(hasProperty(car, "year"));
+console.log(hasProperty(car, "brand"));
+console.log(hasProperty(car, "make"));
+
 /*
 P-TASK:
 
@@ -6,6 +28,7 @@ MASALAN: objectToArray( {a: 10, b: 20}) return [['a', 10], ['b', 20]]
 
 @MITASK
 */
+/*
 function objectToArray(obj: Record<string, any>): [string, any][] {
   return Object.entries(obj) as [string, any][];
 }
@@ -13,7 +36,7 @@ function objectToArray(obj: Record<string, any>): [string, any][] {
 // Misol
 const result = objectToArray({ a: 32, b: 35 });
 console.log(result);
-
+*/
 /*O-TASK:
 
 Shunday function yozing, u har xil valuelardan iborat array qabul qilsin va array ichidagi sonlar yigindisini hisoblab chiqqan javobni qaytarsin.
