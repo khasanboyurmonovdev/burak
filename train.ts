@@ -6,13 +6,14 @@ MASALAN: randomBetween(30, 50) return 45
 
 @MITASK
 */
+/*
 function randomBetween(min: number, max: number): number {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 // Misol:
 console.log(randomBetween(30, 50)); // 30 va 50 orasidagi random raqam
-
+*/
 /*
 ZA-TASK:
 
