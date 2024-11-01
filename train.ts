@@ -1,3 +1,25 @@
+/* 
+T-TASK:
+
+Shunday function yozing, u sonlardan tashkil topgan 2 ta array qabul qilsin va ikkala arraydagi sonlarni tartiblab bir arrayda qaytarsin
+MASALAN: mergeSortedArrays([0,3,4,31], [4,6,30]); return [0,3,4,4,6,30,31]
+
+@MITASK
+*/
+function mergeSortedArrays(arr1: number[], arr2: number[]): number[] {
+  // Ikkita arrayni birlashtirish
+  const mergedArray = [...arr1, ...arr2];
+
+  // Arrayni tartiblash
+  mergedArray.sort((a, b) => a - b);
+
+  return mergedArray;
+}
+
+// Misol uchun foydalanish:
+const result = mergeSortedArrays([0, 3, 4, 31], [4, 6, 30]);
+console.log(result);
+
 /*
 S-TASK:
 
@@ -6,6 +28,7 @@ MASALAN: missingNumber([3, 0, 1]) return 2
 
 @MITASK
 */
+/*
 function missingNumber(arr: number[]): number {
   const n = arr.length;
   const expectedSum = (n * (n + 1)) / 2; // 0 dan n gacha bo'lgan sonlar yig'indisi
@@ -15,7 +38,7 @@ function missingNumber(arr: number[]): number {
 
 // Misol
 console.log(missingNumber([3, 0, 1]));
-
+*/
 /*
 R-TASK:
 
