@@ -5,6 +5,7 @@ MASALAN: palindromCheck("dad") return true;  palindromCheck("son") return false;
 
 @MITASK 
 */
+/*
 function palindromCheck(str: string): boolean {
   // Kichik harflarga o'tkazish va bo'sh joylarni olib tashlash
   const cleanedStr = str.toLowerCase().replace(/\s+/g, "");
@@ -19,7 +20,7 @@ function palindromCheck(str: string): boolean {
 // Misol uchun
 console.log(palindromCheck("Anna")); // true
 console.log(palindromCheck("stepfather")); // false
-
+*/
 /* 
 M-TASK: 
 Shunday function yozing, u raqamlardan tashkil topgan array qabul qilsin va array ichidagi har bir raqam uchun raqamni ozi va hamda osha raqamni kvadratidan tashkil topgan object hosil qilib, hosil bolgan objectlarni array ichida qaytarsin. 
@@ -162,7 +163,7 @@ css class=> Snake case
 
  *
 /**request:
- * Traditional API
+ * Traditional API (form POST)
  * REST API
  * GraphQL API
  * 
