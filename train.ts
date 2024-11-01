@@ -5,22 +5,10 @@ MASALAN: calculateSumOfNumbers([10, "10", {son: 10}, true, 35]) return 45
 
 @MITASK
 */
-function calculateSumOfNumbers(
-  arr: (number | string | object | boolean)[]
-): number {
-  let sum = 0;
-
-  for (const item of arr) {
-    if (typeof item === "number") {
-      sum += item;
-    } else if (typeof item === "string" && !isNaN(Number(item))) {
-      sum += Number(item);
-    } else if (typeof item === "boolean") {
-      sum += item ? 1 : 0;
-    }
-  }
-
-  return sum;
+function calculateSumOfNumbers(arr: any): number {
+  return arr.reduce((count: number, ele: any) => {
+    return (count += typeof ele === "number" ? ele : 0);
+  }, 0);
 }
 
 // Misol
