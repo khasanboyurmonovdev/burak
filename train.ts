@@ -1,3 +1,27 @@
+/*
+K-TASK: 
+
+Shunday function yozing, u string qabul qilsin va string ichidagi unli harflar sonini qaytarsin.
+MASALAN: countVowels("string") return 1;
+
+*/
+function countVowels(input: string): number {
+  const vowels = "aeiouAEIOU";
+  let count = 0;
+
+  for (const char of input) {
+    if (vowels.includes(char)) {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+// Misol uchun
+console.log(countVowels("development"));
+console.log(countVowels("administration"));
+
 /*J-TASK: 
 
 Shunday function yozing, u string qabul qilsin va string ichidagi eng uzun sozni qaytarsin.
