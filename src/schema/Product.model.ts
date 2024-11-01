@@ -30,12 +30,12 @@ const productSchema = new Schema(
       type: Number,
       required: true,
     },
-    ProductSize: {
+    productSize: {
       type: String,
       enum: ProductSize,
       default: ProductSize.NORMAL,
     },
-    ProductVolume: {
+    productVolume: {
       type: Number,
       enum: ProductVolume,
       default: ProductVolume.ONE,
