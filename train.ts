@@ -1,3 +1,32 @@
+/*O-TASK:
+
+Shunday function yozing, u har xil valuelardan iborat array qabul qilsin va array ichidagi sonlar yigindisini hisoblab chiqqan javobni qaytarsin.
+MASALAN: calculateSumOfNumbers([10, "10", {son: 10}, true, 35]) return 45
+
+@MITASK
+*/
+function calculateSumOfNumbers(
+  arr: (number | string | object | boolean)[]
+): number {
+  let sum = 0;
+
+  for (const item of arr) {
+    if (typeof item === "number") {
+      sum += item;
+    } else if (typeof item === "string" && !isNaN(Number(item))) {
+      sum += Number(item);
+    } else if (typeof item === "boolean") {
+      sum += item ? 1 : 0;
+    }
+  }
+
+  return sum;
+}
+
+// Misol
+const result = calculateSumOfNumbers([100, "100", { son: 10 }, true, 375]);
+console.log(result);
+
 /*N-TASK: 
 
 Shunday function yozing, u string qabul qilsin va string palindrom yani togri oqilganda ham, orqasidan oqilganda ham bir hil oqiladigan soz ekanligini aniqlab boolean qiymat qaytarsin.
