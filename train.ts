@@ -1,3 +1,25 @@
+/*N-TASK: 
+
+Shunday function yozing, u string qabul qilsin va string palindrom yani togri oqilganda ham, orqasidan oqilganda ham bir hil oqiladigan soz ekanligini aniqlab boolean qiymat qaytarsin.
+MASALAN: palindromCheck("dad") return true;  palindromCheck("son") return false;
+
+@MITASK 
+*/
+function palindromCheck(str: string): boolean {
+  // Kichik harflarga o'tkazish va bo'sh joylarni olib tashlash
+  const cleanedStr = str.toLowerCase().replace(/\s+/g, "");
+
+  // Qaytgan stringni orqaga o'girish
+  const reversedStr = cleanedStr.split("").reverse().join("");
+
+  // O'xshashlikni tekshirish
+  return cleanedStr === reversedStr;
+}
+
+// Misol uchun
+console.log(palindromCheck("Anna")); // true
+console.log(palindromCheck("stepfather")); // false
+
 /* 
 M-TASK: 
 Shunday function yozing, u raqamlardan tashkil topgan array qabul qilsin va array ichidagi har bir raqam uchun raqamni ozi va hamda osha raqamni kvadratidan tashkil topgan object hosil qilib, hosil bolgan objectlarni array ichida qaytarsin. 
@@ -7,6 +29,7 @@ MASALAN: getSquareNumbers([1, 2, 3]) return [{number: 1, square: 1}, {number: 2,
 
 @MITASK
 */
+/*
 function getSquareNumbers(
   numbers: number[]
 ): { number: number; square: number }[] {
@@ -19,7 +42,7 @@ function getSquareNumbers(
 // Misol uchun:
 const result = getSquareNumbers([7, 5, 9]);
 console.log(result);
-
+*/
 /*
 L-TASK: 
 
