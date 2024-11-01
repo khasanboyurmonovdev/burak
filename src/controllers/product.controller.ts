@@ -1,6 +1,9 @@
 import { Request, Response } from "express";
 import Errors from "../libs/errors";
 import { T, test } from "../libs/types/common";
+import ProductService from "../models/Product.service";
+
+const productService = new ProductService();
 const productController: T = {};
 
 productController.getAllProducts = async (req: Request, res: Response) => {
