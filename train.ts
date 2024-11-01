@@ -98,16 +98,27 @@ folders, file=>Kebab case
 css class=> Snake case
 - Error handling
 
- */
-/**
+ *
+/**request:
  * Traditional API
  * REST API
  * GraphQL API
- * ....
+ * 
+ * frontend development:
+ * Traditional FD => SSR=> EJS
+ * MODERN FD => SPA=> REACT
+ * 
  
  */
 /**COOKIE LAR  HAR BIR REQUESTGA JOINT QILIB OLADI
  * COOKIE OZINI OZI DESTROY QILA OLADI
+ */
+//validation:
+/**
+ * frontend validation
+ 
+ * backend validation
+ *  database validation
  */
 /*H2-TASK: 
 
