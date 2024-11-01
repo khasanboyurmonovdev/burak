@@ -44,10 +44,25 @@ memberController.login = async (req: Request, res: Response) => {
     });
     res.status(HttpCode.OK).json({ member: result, accessToken: token });
   } catch (err) {
-    console.log("Error, login:", err);
     if (err instanceof Errors) res.status(err.code).json(err);
     else res.status(Errors.standard.code).json(Errors.standard);
   }
 };
 
+memberController.verifyAuth = async (req: Request, res: Response) => {
+  try {
+    let member = null;
+    const token = req.cookies["accessToken"];
+    if (token) member = await authService.checkAuth(token);
+
+    if (!member)
+      throw new Errors(HttpCode.UNAUTHORIZED, Message.NOT_AUTHENTICATED);
+    console.log("member:", member);
+    res.status(HttpCode.OK).json({ member: member });
+  } catch (err) {
+    console.log("Error, verifyAuth:", err);
+    if (err instanceof Errors) res.status(err.code).json(err);
+    else res.status(Errors.standard.code).json(Errors.standard);
+  }
+};
 export default memberController;
