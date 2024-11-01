@@ -1,13 +1,13 @@
 import mongoose, { Schema } from "mongoose";
-import { orderStatus } from "../libs/enums/order.enum";
+import { OrderStatus } from "../libs/enums/order.enum";
 const orderSchema = new Schema(
   {
     orderTotal: { type: Number, required: true },
     orderDelivery: { type: Number, required: true },
     orderStatus: {
       type: String,
-      enum: orderStatus,
-      default: orderStatus.PAUSE,
+      enum: OrderStatus,
+      default: OrderStatus.PAUSE,
     },
     memberId: {
       type: Schema.Types.ObjectId,
