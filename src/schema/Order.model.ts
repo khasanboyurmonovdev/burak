@@ -1,5 +1,6 @@
 import mongoose, { Schema } from "mongoose";
 import { OrderStatus } from "../libs/enums/order.enum";
+
 const orderSchema = new Schema(
   {
     orderTotal: { type: Number, required: true },
