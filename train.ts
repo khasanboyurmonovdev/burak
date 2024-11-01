@@ -7,6 +7,12 @@ css class=> Snake case
 - Error handling
 
  */
+/**
+ * Traditional API
+ * REST API
+ * GraphQL API
+ * ....
+ */
 
 /*H2-TASK: 
 
