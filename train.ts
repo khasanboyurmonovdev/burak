@@ -1,9 +1,20 @@
+/*Project Standards:
+-Login standards;
+-Naming standards: function, method , variable => CamelCase
+class=> Pascal
+folders=>Kebab case
+css class=> Snake case
+- Error handling
+
+ */
+
 /*H2-TASK: 
 
 Shunday function tuzing, unga string argument pass bolsin. Function ushbu agrumentdagi digitlarni yangi stringda return qilsin
 MASALAN: getDigits("m14i1t") return qiladi "141"
 
 @MITASK*/
+/*
 function getDigits(input: string): string {
   let digits = "";
 
@@ -19,7 +30,7 @@ function getDigits(input: string): string {
 // Misol uchun funksiyani chaqirish
 const result = getDigits("m14i1tapqrstv879uuu888uuu");
 console.log(result);
-
+*/
 /*H-TASK: 
 
 shunday function tuzing, u integerlardan iborat arrayni argument sifatida qabul qilib, faqat positive qiymatlarni olib string holatda return qilsin
