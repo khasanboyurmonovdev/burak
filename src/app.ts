@@ -17,6 +17,7 @@ const store = new MongoDBStore({
 const app = express(); // bu yerda expressni chaqirib olyapmiz
 
 app.use(express.static(path.join(__dirname, "public")));
+app.use("/uploads", express.static("./uploads"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json()); // bu kod orqali rest API sifatida request bo'lyapkan data larni body sida kelyapkan  json data otkazishga ruxsat beryapmiz
 app.use(cookieParser());
