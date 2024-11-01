@@ -13,7 +13,9 @@ function sortByAge(arr: { age: number }[]): { age: number }[] {
 // Misol
 const result = sortByAge([{ age: 23 }, { age: 21 }, { age: 13 }]);
 console.log(result); // [{age: 13}, {age: 21}, {age: 23}]
-
+//new commit
+const result2 = sortByAge([{ age: 27 }, { age: 31 }, { age: 19 }]);
+console.log(result2);
 /*
 Z-TASK:
 
