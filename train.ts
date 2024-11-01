@@ -1,3 +1,19 @@
+/*
+P-TASK:
+
+Shunday function yozing, u object qabul qilsin va arrayni object arrayga otkazib arrayni qaytarsin qaytarsin.
+MASALAN: objectToArray( {a: 10, b: 20}) return [['a', 10], ['b', 20]]
+
+@MITASK
+*/
+function objectToArray(obj: Record<string, any>): [string, any][] {
+  return Object.entries(obj) as [string, any][];
+}
+
+// Misol
+const result = objectToArray({ a: 32, b: 35 });
+console.log(result);
+
 /*O-TASK:
 
 Shunday function yozing, u har xil valuelardan iborat array qabul qilsin va array ichidagi sonlar yigindisini hisoblab chiqqan javobni qaytarsin.
@@ -5,6 +21,7 @@ MASALAN: calculateSumOfNumbers([10, "10", {son: 10}, true, 35]) return 45
 
 @MITASK
 */
+/*
 function calculateSumOfNumbers(arr: any): number {
   return arr.reduce((count: number, ele: any) => {
     return (count += typeof ele === "number" ? ele : 0);
@@ -14,7 +31,7 @@ function calculateSumOfNumbers(arr: any): number {
 // Misol
 const result = calculateSumOfNumbers([100, "100", { son: 10 }, true, 375]);
 console.log(result);
-
+*/
 /*N-TASK: 
 
 Shunday function yozing, u string qabul qilsin va string palindrom yani togri oqilganda ham, orqasidan oqilganda ham bir hil oqiladigan soz ekanligini aniqlab boolean qiymat qaytarsin.
