@@ -1,3 +1,35 @@
+/*I-TASK:
+
+Shunday function yozing, u parametridagi array ichida eng kop takrorlangan raqamni topib qaytarsin.
+MASALAN: majorityElement([1,2,3,4,5,4,3,4]) return 4
+
+*/
+function majorityElement(nums: number[]): number | null {
+  const countMap: { [key: number]: number } = {};
+
+  nums.forEach((num) => {
+    if (countMap[num]) {
+      countMap[num]++;
+    } else {
+      countMap[num] = 1;
+    }
+  });
+
+  let majorityElement: number | null = null;
+  let maxCount = 0;
+
+  for (const num in countMap) {
+    if (countMap[num] > maxCount) {
+      maxCount = countMap[num];
+      majorityElement = Number(num);
+    }
+  }
+
+  return majorityElement;
+}
+
+console.log(majorityElement([5, 1, 2, 3, 4, 5, 2, 2, 8]));
+
 /*Project Standards:
 -Login standards;
 -Naming standards: function, method , variable => CamelCase
