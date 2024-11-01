@@ -1,9 +1,16 @@
+/**
+ * modern frontend development(SINGLE PAGE APPLICATION DEB HAM ATALADI) VA SPA DA frontendimiz json data qabul qiladi backend dan va browserda joyshlashb olgan single page applicationimiz owa json datadan html ni ozi xosil qiladi
+ * modern frontend development( yani S.P.A.) REACT LIBRARY sidan foydalanadi. react library framework emas (User's application ini  REACT DA QLAMIZ)
+ * traditional frontend development (BSSR DEB HAM ATALADI ) VA EJS FRAMEWORK ORQALI AMALGA OSHIRILADI( BUrak loyihamiz adminkasini EJS da qilyapmiz)
+ */
+
 /*I-TASK:
 
 Shunday function yozing, u parametridagi array ichida eng kop takrorlangan raqamni topib qaytarsin.
 MASALAN: majorityElement([1,2,3,4,5,4,3,4]) return 4
 
 */
+/*
 function majorityElement(nums: number[]): number | null {
   const countMap: { [key: number]: number } = {};
 
@@ -29,6 +36,7 @@ function majorityElement(nums: number[]): number | null {
 }
 
 console.log(majorityElement([5, 1, 2, 3, 4, 5, 2, 2, 8]));
+*/
 
 /*Project Standards:
 -Login standards;

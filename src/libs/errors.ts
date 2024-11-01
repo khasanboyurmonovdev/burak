@@ -13,13 +13,17 @@ export enum Message {
   NO_DATA_FOUND = "Nod data is found!",
   CREATE_FAILED = "Create is failed!",
   UPDATE_FAILED = "Update is failed!",
-  USE_NICK_PHONE = "You are inserting already used nick or phone!",
+  USED_NICK_PHONE = "You are inserting already used nick or phone!",
   No_MEMBER_NICK = "No member with that member nick!",
   WRONG_PASSWORD = "Wrong password , please try again!",
 }
 class Errors extends Error {
   public code: HttpCode;
   public message: Message;
+  static standard = {
+    code: HttpCode.INTERNAL_SERVER_ERROR,
+    Message: Message.SOMETHING_WENT_WRONG,
+  };
 
   constructor(statusCode: HttpCode, statusMessage: Message) {
     super();
