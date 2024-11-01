@@ -1,3 +1,4 @@
+///////new comment
 /*
 ZB-TASK:
 
@@ -6,6 +7,7 @@ MASALAN: randomBetween(30, 50) return 45
 
 @MITASK
 */
+
 /*
 function randomBetween(min: number, max: number): number {
   return Math.floor(Math.random() * (max - min + 1)) + min;
