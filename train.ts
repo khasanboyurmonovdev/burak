@@ -6,6 +6,7 @@ MASALAN: sumEvens([1,2,3]) return 2
 
 @MITASK
 */
+/*
 function sumEvens(numbers: number[]): number {
   return numbers
     .filter((num) => num % 2 === 0) // Juft sonlarni filtrlash
@@ -15,7 +16,7 @@ function sumEvens(numbers: number[]): number {
 // Misol uchun chaqirish
 const result = sumEvens([1, 2, 3, 4, 5, 6, 7, 7]);
 console.log(result);
-
+*/
 /*
 Y-TASK:
 
