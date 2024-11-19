@@ -1,4 +1,27 @@
 /*
+ZH-TASK:
+
+Shunday function yozing, u berilgan array parametrni ichidagi eng katta raqamgacha tushib qolgan raqamlarni bir arrayda qaytarsin. 
+MASALAN: findDisappearedNumbers([1, 3, 4, 7]) return [2, 5, 6]
+
+@MITASK
+
+*/
+function findDisappearedNumbers(arr: number[]): number[] {
+  if (arr.length === 0) return []; // Bo'sh array uchun hech qanday raqam yo'q
+
+  const maxNum = Math.max(...arr); // Arraydagi eng katta raqamni topish
+  const allNumbers = Array.from({ length: maxNum }, (_, i) => i + 1); // 1dan maxNumgacha bo'lgan barcha raqamlarni yaratish
+  const disappearedNumbers = allNumbers.filter((num) => !arr.includes(num)); // Berilgan arrayda yo'q bo'lgan raqamlarni topish
+
+  return disappearedNumbers;
+}
+
+// Test qilish
+const result = findDisappearedNumbers([1, 3, 4, 7]);
+console.log(result); // [2, 5, 6]
+
+/*
 TASK ZG
 
 String sifatida berilgan string parametrni
@@ -9,6 +32,7 @@ return 'name_should_be_a_string'
 
 
 */
+/*
 function convertToSnakeCase(input: string): string {
   return input
     .toLowerCase() // Barcha harflarni kichik harfga o'zgartiradi
@@ -18,7 +42,7 @@ function convertToSnakeCase(input: string): string {
 // Masalan:
 const result = convertToSnakeCase("name should be a string");
 console.log(result); // 'name_should_be_a_string'
-
+*/
 /*
 ZE-TASK:
 
